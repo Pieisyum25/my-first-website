@@ -14,6 +14,36 @@
 
         <hr> <!-- Horizontal rules <hr> are deprecated! Use CSS instead!-->
 
+        <p>
+            Congratulations on making it this far! I'm very proud. Here, you have earned yourself another cookie.
+        </p>
+
+        <button id="button">Reveal Cookie</button>
+
+        <br>
+        <br>
+
+        <img id="img" hidden src="fire.jpg" alt="A burning inferno." width="100" height="100">
+
+        <p id="p" hidden>
+            There's something I need to tell you.
+            <br>
+            <br>
+            <strong>
+                I hate cookies. This whole time, I've hated cookies.
+                They can all burn. Every last one of them. Take them all.
+            </strong>
+            <br>
+            <br>
+            I'm sorry I have to do this. Goodbye cookie lover...
+        </p>
+
+        <script>
+            document.getElementById("button").addEventListener('click', function (){
+                img.hidden = false;
+                p.hidden = false;
+            });
+        </script>
 
     </body>
 
