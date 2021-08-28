@@ -24,3 +24,7 @@ h1 {
     text-align: center;
     text-decoration: wavy skyblue underline;
 }
+em {
+    color: slateblue;
+    font: italic bold 15px Georgia, serif;
+}
