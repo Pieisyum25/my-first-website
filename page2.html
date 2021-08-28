@@ -21,8 +21,7 @@
 
         <!-- 
             The img tag is used to display images!
-            The alt attribute is used to provide a description of the image if it doesn't load
-            or for the visually impaired.
+            The alt attribute is used to provide a description of the image if it can't be seen.
             Width and height are in pixels.
         -->
         <img src="cookie.jpg" alt="A delicious looking cookie." width="100" height="100">
@@ -32,7 +31,7 @@
 
         <!-- There are 3 different types of lists that can be used: -->
 
-        <!-- Ordered lists use the <ol> tag: -->
+        <!-- Ordered lists use the <ol> tag. <li> is used for each list item: -->
         <h3>Here is an <u>Ordered List</u> of why you should accept this cookie:</h3>
         <ol>
             <li>I am offering it to you.</li>
@@ -41,7 +40,7 @@
             <li>Mmm chobolate choclate chib.</li>
         </ol>
 
-        <!-- Unordered lists use the <ul> tag: -->
+        <!-- Unordered lists use the <ul> tag. <li> is used for each list item: -->
         <h3>Here is an <u>Unordered List</u> of why you should ignore cookie haters:</h3>
         <ul>
             <li>They're dumb.</li>
@@ -50,7 +49,10 @@
             <li>They stole my dog.</li>
         </ul>
 
-        <!-- Definition lists use the <dl> tag: -->
+        <!-- 
+            Definition lists use the <dl> tag.
+            <dt> is used for each term, and <dd> is used for each definition: 
+        -->
         <h3>Finally, here is a <u>Definition List</u> of some key cookie aspects:</h3>
         <dl>
             <dt><strong>Cookie Base</strong></dt>
@@ -68,6 +70,59 @@
         </dl>
 
 
+        <h2>If that wasn't enough for you, here is a Table!</h2>
+        <em>
+            Note: HTML Tables should never be used for webpage layouts.
+            Only use them for presenting static information.
+        </em>
+        <br>
+        <br>
+
+        <style>
+            table, td, th {
+                border: 1px solid black;
+            }
+        </style>
+
+        <!--
+            Tables are defined using the <table> tag.
+            <tr> defines a new row.
+            <th> defines a header cell, and <td> defines a data cell.
+            The colspan and rowspan attributes can be used to make cells bigger.
+            <thead>, <tbody>, and <tfoot> can be used to split the table into sections.
+
+            HTML tables should only be used to display static information, as they are
+            difficult to modify and there are many better alternatives.
+        -->
+        <table>
+            <caption>Health Benefits of Eating Cookie</caption>
+            <thead>
+                <tr>
+                    <th>Benefit</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Increased Strength</td>
+                    <td>Your muscles will grow to 5x their original size, and you will bench 100kg. Nice!</td>
+                </tr>
+                <tr>
+                    <td>Increased Speed</td>
+                    <td>You will run faster than light, causing you to live in darkness. Epic!</td>
+                </tr>
+                <tr>
+                    <td>Immortality</td>
+                    <td>You can't die. Everyone you know and love will die around you. Cool!</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <p>
+            Now that you love cookies (if you didn't already), let's proceed.
+            <a href="page3.html">Click here to go to page 3.</a>
+        </p>
         
     </body>
 
