@@ -1,0 +1,26 @@
+/*
+This is a CSS external stylesheet.
+*/
+
+/*
+Here are some definitions:
+
+selector {
+    property: value;
+}
+
+selector = element/elements to be styled.
+property = property of the element/elements to be styled.
+value = the value you want to that that property to.
+
+declaration = a "property: value" pair.
+declaration block = the list of declarations within {}.
+ruleset = the selector + its declaration block.
+*/
+
+h1 {
+    color: skyblue;
+    padding: 20px;
+    text-align: center;
+    text-decoration: wavy skyblue underline;
+}
