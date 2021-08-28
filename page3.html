@@ -10,7 +10,7 @@
 
     <body>
 
-        <h1>Welcome to Page 3! :)</h1>
+        <h1 id="heading">Welcome to Page 3! :)</h1>
 
         <hr> <!-- Horizontal rules <hr> are deprecated! Use CSS instead!-->
 
@@ -36,12 +36,22 @@
             <br>
             <br>
             I'm sorry I have to do this. Goodbye cookie lover...
+
+            <br>
+            <br>
+
+            <em>
+                With your cookie friend gone, no one is left to guide you.
+                Hesitantly, you decide to <a href="page4.html">venture into the unknown.</a>
+            </em>
         </p>
 
+        <!-- Some inserted JavaScript using the <script> tag to make the text and image appear -->
         <script>
             document.getElementById("button").addEventListener('click', function (){
                 img.hidden = false;
                 p.hidden = false;
+                heading.innerText="I'm sorry.";
             });
         </script>
 
