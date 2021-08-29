@@ -29,32 +29,43 @@
             This is only recommended if the style is unique to this element or its child elements
             (the other elements within its tags).
         -->
-        <h1 style="color: skyblue; text-align: center;">Welcome to CSS Land!</h1>
+        <h1 class="floating" style="color: skyblue; text-align: center;">Welcome to CSS Land!</h1>
 
-        <br>
 
-        <em>
-            You find yourself in a strange land filled with colour and vibrance.
-            You could even say its style is cascading around you...
-        </em>
+        
+        <p>
+            <em>
+                <!--
+                    <span> is an inline container used to select a section.
+                    Useful for applying CSS/JavaScript to small sections of text.
+                -->
+                You find yourself in a strange land filled with
+                <span class="rainbow">colour and vibrance</span>.
+                You could even say its style is cascading around you...
+            </em>
+        </p>
+        <p><em>You notice a board listing some interesting principles.</em></p>
+        
 
-        <br>
-        <br>
-
-        <em>You notice a board listing some interesting principles.</em>
-        <dl>
-            <dt>Cascading Inheritance</dt>
-            <dd>
-                In a conflict, the last written rule is applied.
-                Rules applied to parent elements are also applied to its children.
-            </dd>
-            <dt>Specificity</dt>
-            <dd>
-                Rules with more specific selectors will overrule rules with
-                less specific selectors, regardless of written order.
-                ID > class > element level.
-            </dd>
-        </dl>
+        <!--
+            <div> is a block-level container used to select a section.
+            Useful for applying CSS/JavaScript to large sections of the document.
+        -->
+        <div class="floating">
+            <dl>
+                <dt>Cascading Inheritance</dt>
+                <dd>
+                    In a conflict, the last written rule is applied.
+                    Rules applied to parent elements are also applied to its children.
+                </dd>
+                <dt>Specificity</dt>
+                <dd>
+                    Rules with more specific selectors will overrule rules with
+                    less specific selectors, regardless of written order.
+                    ID > class > element level.
+                </dd>
+            </dl>
+        </div>
     </body>
 
 </html>

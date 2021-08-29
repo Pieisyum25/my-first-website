@@ -18,11 +18,46 @@ declaration block = the list of declarations within {}.
 ruleset = the selector + its declaration block.
 */
 
+/* This is an animation of a rainbow using keyframes. */
+@keyframes rainbow {
+    0% {color:red;}
+    20% {color:yellow;}
+    40% {color:lime;}
+    60% {color:skyblue;}
+    80% {color:slateblue}
+    90% {color:purple;}
+    100% {color:red;}
+}
+
+/* Here is a bobbing up and down animation. */
+@keyframes floating {
+    0% {top:0px;}
+    50% {top:20px;}
+    100% {top:0px;}
+}
+
+/** Lets apply the rainbow animation to all elements of the rainbow class. */
+.rainbow {
+    animation-name: rainbow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    /* There are many other animation properties available. */
+    /* Shorthand version: animation: rainbow 5s infinite */
+}
+
+/** Applying the floating animation to the floating class. */
+.floating {
+    position: relative;
+    animation: floating 3s ease-in-out infinite;
+}
+
 h1 {
     color: skyblue;
     padding: 20px;
     text-align: center;
     text-decoration: wavy skyblue underline;
+    position: relative;
+    animation: floating 3s ease-in-out infinite;
 }
 em {
     color: slateblue;
