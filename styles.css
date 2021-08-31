@@ -29,12 +29,32 @@ ruleset = the selector + its declaration block.
     100% {color:red;}
 }
 
+/* This is an animation of a rainbow using keyframes. */
+@keyframes background-rainbow {
+    0% {background-color:red;}
+    20% {background-color:yellow;}
+    40% {background-color:lime;}
+    60% {background-color:skyblue;}
+    80% {background-color:slateblue}
+    90% {background-color:purple;}
+    100% {background-color:red;}
+}
+
 /* Here is a bobbing up and down animation. */
 @keyframes floating {
     0% {top:0px;}
     50% {top:20px;}
     100% {top:0px;}
 }
+
+/* An animation for moving around the page. */
+@keyframes exploring {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
 
 /** Lets apply the rainbow animation to all elements of the rainbow class. */
 .rainbow {
@@ -51,15 +71,21 @@ ruleset = the selector + its declaration block.
     animation: floating 3s ease-in-out infinite;
 }
 
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: exploring 4s infinite, background-rainbow 4s infinite;
+}
+
 h1 {
     color: skyblue;
     padding: 20px;
     text-align: center;
     text-decoration: wavy skyblue underline;
-    position: relative;
-    animation: floating 3s ease-in-out infinite;
 }
-em {
+p {
     color: slateblue;
     font: italic bold 15px Georgia, serif;
 }
