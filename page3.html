@@ -15,43 +15,54 @@
 
         <hr> <!-- Horizontal rules <hr> are deprecated! Use CSS instead!-->
 
+        <!-- Use <blockquote> and <cite> for long quotes! -->
         <p>
-            Congratulations on making it this far! I'm very proud. Here, you have earned yourself another cookie.
+            Congratulations on making it this far! I'm very proud.
+            It's as <a href="https://quotefancy.com/quote/894283/Ralph-Waldo-Emerson-All-great-successes-are-the-triumph-of-persistence">
+                <cite>Ralph Waldo Emerson</cite>
+            </a> 
+            says:
         </p>
+        <blockquote cite="https://quotefancy.com/quote/894283/Ralph-Waldo-Emerson-All-great-successes-are-the-triumph-of-persistence">
+            All great successes are the triumph of persistence.
+        </blockquote>
+        Here, you have earned yourself another cookie.
 
         <button id="button">Reveal Cookie</button>
 
         <br>
         <br>
+        <div id="hidden" hidden>
 
-        <img id="img" hidden src="fire.jpg" alt="A burning inferno." width="100" height="100">
+            <img src="fire.jpg" alt="A burning inferno." width="100" height="100">
 
-        <p id="p" hidden>
-            There's something I need to tell you.
-            <br>
-            <br>
-            <strong>
-                I hate cookies. This whole time, I've hated cookies.
-                They can all burn. Every last one of them. Take them all.
-            </strong>
-            <br>
-            <br>
-            I'm sorry I have to do this. Goodbye cookie lover...
+            <p>
+                There's something I need to tell you.
+                <br>
+                <br>
+                <strong>
+                    I hate cookies. This whole time, I've hated cookies.
+                    They can all burn. Every last one of them. Take them all.
+                </strong>
+                <br>
+                <br>
+                I'm sorry I have to do this. Goodbye cookie lover...
 
-            <br>
-            <br>
+                <br>
+                <br>
 
-            <em>
-                With your cookie friend gone, no one is left to guide you.
-                Hesitantly, you decide to <a href="page4.html">venture into the unknown.</a>
-            </em>
-        </p>
+                <em>
+                    With your cookie friend gone, no one is left to guide you.
+                    Hesitantly, you decide to <a href="page4.html">venture into the unknown.</a>
+                </em>
+            </p>
+
+        </div>
 
         <!-- Some inserted JavaScript using the <script> tag to make the text and image appear -->
         <script>
             document.getElementById("button").addEventListener('click', function (){
-                img.hidden = false;
-                p.hidden = false;
+                hidden.hidden = false;
                 heading.innerText="I'm sorry.";
             });
         </script>
