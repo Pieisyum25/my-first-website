@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>My First Website</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="A test of the web development skills I've picked up.">
+        <meta name="author" content="John Flynn">
+        <link rel="shortcut icon" type="image/jpg" href="cookie.ico">
+        <link rel="stylesheet" type="text/css" href="finalstyle.css">
+    </head>
+
+    <body>
+
+        <!-- Header should contain introductory content like heading and author name. -->
+        <header>
+            <h1>Cookie Central</h1>
+        </header>
+
+        <!-- 
+            The navigation section provides the main navigation functionality within 
+            the page or to other pages.
+            Commonly used as a menu or index, and may or may not be in the header.
+        -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#types">Types</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main should contain the main unique content of the page. -->
+        <main>
+
+            <!-- 
+                Sections should be used to group a single piece of functionality or theme
+                on the page.
+                In this case, I am using it for the About section.
+                It is best practice to start a section with a heading.
+            -->
+            <section>
+                <h2>Who Are We?</h2>
+                
+                <!-- Articles are blocks of content that make sense on their own, like a single blog post etc. -->
+                <article>
+                    <p>We make and deliver amazing cookies to you, and your neighbour!</p>
+                </article>
+            </section>
+
+            <!-- Cookie Types Section. -->
+            <section>
+                <h2 id="types">Cookie Types</h2>
+            </section>
+
+            <!-- Contact Info Section. -->
+            <section>
+                <h2 id="contact">Contact Information</h2>
+            </section>
+
+
+            <!-- 
+                A sidebar using <aside>. These usually go in main, and show related content via
+                another area of the webpage. Usually on the side.
+            -->
+            <aside>
+                <h3>Recent Posts</h3>
+
+                <dl>
+                    <dt>Cookie Central Layoffs Hit Record High due to Covid-19</dt>
+                    <dd>
+                        The recent outbreak has wreaked devastation on economies and employment rates globally,
+                        and many componies are finding themselves in financial struggle.
+                        Cookie Central is no exception. New figures from ...
+                    </dd>
+                    <dt>New Low for Cookie Central</dt>
+                    <dd>
+                        Cookie Central CEO Cook E. McDough has filed for his resignation after the recent
+                        allegations regarding illicit cookie smuggling. Cookie Central released a statement
+                        today detailing the outcome of a long discussion with shareholders, detailing McDough's
+                        resignation and future plans for the company...
+                    </dd>
+                    <dt>Cookie Central becomes Allegation Central</dt>
+                    <dd>
+                        News has spread fast of a police raid on Cookie Central headquarters today at
+                        4:13pm. It is believed the rain is in response to various allegations made by
+                        Cookie Central employees regarding illicit cookie smuggling. Alleged smuggled cookies
+                        include variants such as uranium chip, asbestos coated, and even the infamous butternut...
+                    </dd>
+                </dl>
+            </aside>
+
+        </main>
+
+
+        <!--
+            The footer is a strip across the bottom of the page that generally contains
+            fine print, copyright notices, or contact info.
+        -->
+        <footer>
+            <p>©Copyright 2025 by Cookie Central. All rights reserved.</p>
+        </footer>
+
+
+    </body>
+
+</html>
